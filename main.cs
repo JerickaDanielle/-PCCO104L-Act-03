@@ -2,16 +2,20 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        string input;
+        string input = "";
+        string output = "";
         do
         {
-            Console.Write("Enter something: ");
+            Console.WriteLine("Enter something:");
             input = Console.ReadLine();
-            Console.WriteLine(input);
+            if (input != "exit")
+            {
+                output += input + " ";
+                Console.WriteLine(output);
+            }
         } while (input != "exit");
-
-        Console.WriteLine("Closing program...");
+        Console.WriteLine($"Closing program...");
     }
 }

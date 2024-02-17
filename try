@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string input = "";
+        string output = "";
+        do
+        {
+            Console.Write("Enter something: ");
+            input = Console.ReadLine();
+            output += input + " ";
+            Console.WriteLine(output.Trim());
+        } while (input != "exit");
+
+        Console.WriteLine("Closing program...");
+    }
+}
